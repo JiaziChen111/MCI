@@ -17,13 +17,13 @@ disp(' ');
 
 % Two condition model
 [M0,U0] = mci_ddm_struct('vconflict2');
-M0.L = 'mci_ddm_like_subject';
-M0.IS = 'mci_ddm_gen_subject';
+M0.L = 'mci_ddm_like_mc';
+M0.IS = 'mci_ddm_gen_mc';
 
 % Baseline model
 [M1,U1] = mci_ddm_struct('unbiased');
-M1.L = 'mci_ddm_like_fixed';
-M1.IS = 'mci_ddm_gen_fixed';
+M1.L = 'mci_ddm_like_sc';
+M1.IS = 'mci_ddm_gen_sc';
 
 % Condition 1
 ddm_true{1}.a=2.1; 
